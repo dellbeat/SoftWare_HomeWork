@@ -19,12 +19,11 @@ namespace MovieTicketSolder
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SoldInfo sold = new SoldInfo("爱拼才会赢");
-            sold.InitInfo(50, 7);
-            sold.SaveInfo();
-            //sold.SaveInfo();
-
-            //sold.GetInfo();
+            MovieList list = new MovieList();
+            list.AddMovie("爱拼才会赢", "不知道导演是谁", "NULL", "不知道主演", "瞎编乱造片", false, null);
+            MessageBox.Show(Convert.ToString(list.AddActionTime("爱拼才会赢", "2017-10-11 5:10")));
+            MessageBox.Show(Convert.ToString(list.AddActionTime("爱拼才会赢", "2017-10-11 8:20")));
+            list.SaveInfo();
             
         }
     }

@@ -65,5 +65,10 @@ namespace MovieTicketSolder
             get { return movietype; }
             set { movietype = value; }
         }
+
+        /// <summary>
+        /// 上映时间
+        /// </summary>
+        public List<string> ActionTime = new List<string>();
     }
 }

@@ -17,3 +17,12 @@ J:\homework\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.cspr
 J:\homework\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.MainForm.resources
 J:\homework\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.Properties.Resources.resources
 J:\homework\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.csproj.GenerateResource.Cache
+J:\ojc\SoftWare_HomeWork\MovieTicketSolder\MovieTicketSolder\bin\Debug\MovieTicketSolder.exe.config
+J:\ojc\SoftWare_HomeWork\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.exe
+J:\ojc\SoftWare_HomeWork\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.pdb
+J:\ojc\SoftWare_HomeWork\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.csprojResolveAssemblyReference.cache
+J:\ojc\SoftWare_HomeWork\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.MainForm.resources
+J:\ojc\SoftWare_HomeWork\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.Properties.Resources.resources
+J:\ojc\SoftWare_HomeWork\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.csproj.GenerateResource.Cache
+J:\ojc\SoftWare_HomeWork\MovieTicketSolder\MovieTicketSolder\bin\Debug\MovieTicketSolder.exe
+J:\ojc\SoftWare_HomeWork\MovieTicketSolder\MovieTicketSolder\bin\Debug\MovieTicketSolder.pdb
