@@ -1,0 +1,19 @@
+c:\users\administrator.win10-710012008\documents\visual studio 2015\Projects\MovieTicketSolder\MovieTicketSolder\bin\Debug\MovieTicketSolder.exe.config
+E:\MovieTicketSolder\MovieTicketSolder\bin\Debug\MovieTicketSolder.exe.config
+E:\MovieTicketSolder\MovieTicketSolder\bin\Debug\MovieTicketSolder.exe
+E:\MovieTicketSolder\MovieTicketSolder\bin\Debug\MovieTicketSolder.pdb
+E:\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.csprojResolveAssemblyReference.cache
+E:\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.MainForm.resources
+E:\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.Properties.Resources.resources
+E:\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.csproj.GenerateResource.Cache
+E:\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.exe
+E:\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.pdb
+J:\homework\MovieTicketSolder\MovieTicketSolder\bin\Debug\MovieTicketSolder.exe.config
+J:\homework\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.exe
+J:\homework\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.pdb
+J:\homework\MovieTicketSolder\MovieTicketSolder\bin\Debug\MovieTicketSolder.exe
+J:\homework\MovieTicketSolder\MovieTicketSolder\bin\Debug\MovieTicketSolder.pdb
+J:\homework\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.csprojResolveAssemblyReference.cache
+J:\homework\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.MainForm.resources
+J:\homework\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.Properties.Resources.resources
+J:\homework\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.csproj.GenerateResource.Cache
