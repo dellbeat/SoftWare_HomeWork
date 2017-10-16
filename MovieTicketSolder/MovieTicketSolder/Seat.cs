@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace MovieTicketSolder
 {
     /// <summary>
@@ -25,5 +20,10 @@ namespace MovieTicketSolder
         /// 座位的列数
         /// </summary>
         public int Y { get; set; }
+
+        /// <summary>
+        /// 出票类型，0为未出票，1为普通票，2为学生票，3为赠票
+        /// </summary>
+        public int SoldType { get; set; }
     }
 }

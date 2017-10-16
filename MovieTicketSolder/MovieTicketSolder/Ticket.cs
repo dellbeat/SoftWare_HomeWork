@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace MovieTicketSolder
 {
     /// <summary>
@@ -11,6 +6,9 @@ namespace MovieTicketSolder
     /// </summary>
     public class Ticket
     {
-        
+        public int Index { get; set; }
+        public double Price { get; set; }
+        public string MovieName { get; set; }
+        public string VaildTime { get; set; }
     }
 }
