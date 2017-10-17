@@ -17,6 +17,8 @@ namespace MovieTicketSolder
             InitializeComponent();
         }
 
+        Movie movienode = null;
+
         private void button1_Click(object sender, EventArgs e)
         {
             //MovieList list = new MovieList();
@@ -40,13 +42,67 @@ namespace MovieTicketSolder
             //        break;
             //    }
             //}
+            //MovieList list = new MovieList();
+            
+            //MessageBox.Show(Convert.ToString(list.List.Count));
+            //MessageBox.Show(Convert.ToString(list.AddMovie("爱拼才会赢3", "不知道导演是谁", "NULL", "不知道主演", "瞎编乱造片", false, null)));
+            //MessageBox.Show(Convert.ToString(list.AddActionTime("爱拼才会赢3", "2017-10-12 5:10")));
+            //MessageBox.Show(Convert.ToString(list.AddActionTime("爱拼才会赢2", "2017-10-12 5:10")));
+            //list.SaveInfo();
+            RefreshList();
+        }
+
+        /// <summary>
+        /// 刷新列表
+        /// </summary>
+        private void RefreshList()
+        {
+            MoviesList.Nodes.Clear();//清空防止重复添加
             MovieList list = new MovieList();
             list.GetList();
-            MessageBox.Show(Convert.ToString(list.List.Count));
-            MessageBox.Show(Convert.ToString(list.AddMovie("爱拼才会赢3", "不知道导演是谁", "NULL", "不知道主演", "瞎编乱造片", false, null)));
-            MessageBox.Show(Convert.ToString(list.AddActionTime("爱拼才会赢3", "2017-10-12 5:10")));
-            MessageBox.Show(Convert.ToString(list.AddActionTime("爱拼才会赢2", "2017-10-12 5:10")));
-            list.SaveInfo();
+            for (int i = 0; i < list.List.Count; i++)
+            {
+                MoviesList.Nodes.Add(list.List[i].Moviename);
+                for (int j = 0; j < list.List[i].ActionTime.Count; j++)
+                {
+                    MoviesList.Nodes[i].Nodes.Add(list.List[i].ActionTime[j]);
+                }
+            }
+        }
+
+        private void MoviesList_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            string FullPath = e.Node.FullPath;
+            string MovieName;
+            string Time = "";
+
+            if(FullPath.IndexOf("\\")==-1)
+            {
+                MovieName = FullPath;
+            }
+            else
+            {
+                string[] array = FullPath.Split('\\');
+                MovieName = array[0];
+                Time = array[1];
+            }
+
+            MessageBox.Show(MovieName+Time);
+        }
+
+        private void GetMovieInfo(string MovieName)
+        {
+            MovieList list = new MovieList();
+            list.GetList();
+
+            for (int i = 0; i < list.List.Count; i++)
+            {
+                if(list.List[i].Moviename==MovieName)
+                {
+                    movienode = list.List[i];
+                    break;
+                }
+            }
         }
     }
 }

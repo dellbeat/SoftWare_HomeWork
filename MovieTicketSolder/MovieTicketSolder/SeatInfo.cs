@@ -40,7 +40,7 @@ namespace MovieTicketSolder
             try
             {
                 doc = new XmlDocument();
-                doc.Load(MovieName + "_" + Time + ".xml");
+                doc.Load(MovieName + "_" + Time.Replace(":","") + ".xml");
 
                 root = doc.DocumentElement;
 
@@ -98,7 +98,7 @@ namespace MovieTicketSolder
         /// </summary>
         public void SaveInfo()
         {
-            XmlTextWriter writer = new XmlTextWriter(MovieName + "_" + Time + ".xml", null);
+            XmlTextWriter writer = new XmlTextWriter(MovieName + "_" + Time.Replace(":", "") + ".xml", null);
             writer.WriteStartElement("Seats");//写入根节点
 
             #region 按照指定格式写入xml文件信息

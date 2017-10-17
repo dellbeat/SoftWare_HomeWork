@@ -83,7 +83,7 @@ namespace MovieTicketSolder
         /// </summary>
         public void SaveInfo()
         {
-            XmlTextWriter writer = new XmlTextWriter(MovieName + "_" + Time + "_SoldInfo.xml", null);
+            XmlTextWriter writer = new XmlTextWriter(MovieName + "_" + Time.Replace(":","") + "_SoldInfo.xml", null);
             writer.WriteStartElement("SoldInfo");
 
             for (int i = 0; i < SoldList.Count; i++)
@@ -121,7 +121,7 @@ namespace MovieTicketSolder
             try
             {
                 doc = new XmlDocument();
-                doc.Load(MovieName + "_" + Time + "_SoldInfo.xml");
+                doc.Load(MovieName + "_" + Time.Replace(":", "") + "_SoldInfo.xml");
 
                 root = doc.DocumentElement;
 

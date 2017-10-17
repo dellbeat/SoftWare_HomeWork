@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+            this.MoviesList = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(228, 198);
+            this.button1.Location = new System.Drawing.Point(453, 264);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -41,11 +42,20 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // MoviesList
+            // 
+            this.MoviesList.Location = new System.Drawing.Point(13, 13);
+            this.MoviesList.Name = "MoviesList";
+            this.MoviesList.Size = new System.Drawing.Size(158, 287);
+            this.MoviesList.TabIndex = 1;
+            this.MoviesList.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.MoviesList_AfterSelect);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 312);
+            this.Controls.Add(this.MoviesList);
             this.Controls.Add(this.button1);
             this.Name = "MainForm";
             this.Text = "售票系统主窗口";
@@ -56,6 +66,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TreeView MoviesList;
     }
 }
 

@@ -174,6 +174,10 @@ namespace MovieTicketSolder
             writer.Close();
         }
 
+        /// <summary>
+        /// 获取列表
+        /// </summary>
+        /// <returns></returns>
         public bool GetList()
         {
             List.Clear();
