@@ -87,22 +87,43 @@ namespace MovieTicketSolder
                 Time = array[1];
             }
 
-            MessageBox.Show(MovieName+Time);
+            if(GetMovieInfo(MovieName)==false)
+            {
+                return;
+            }
+
+            SelectActTime.Text = Time;
+
+            //MessageBox.Show(MovieName + Time);
         }
 
-        private void GetMovieInfo(string MovieName)
+        private bool GetMovieInfo(string MovieName)
         {
             MovieList list = new MovieList();
             list.GetList();
+            bool Found = false;
 
             for (int i = 0; i < list.List.Count; i++)
             {
                 if(list.List[i].Moviename==MovieName)
                 {
                     movienode = list.List[i];
+                    Found = true;
                     break;
                 }
             }
+
+            if(Found==false)
+            {
+                return Found;
+            }
+
+            SelectMovieName.Text = movienode.Moviename;
+            SelectActor.Text = movienode.MainActor;
+            SelectDirector.Text = movienode.Director;
+            SelectType.Text = movienode.MovieType;
+
+            return Found;
         }
     }
 }

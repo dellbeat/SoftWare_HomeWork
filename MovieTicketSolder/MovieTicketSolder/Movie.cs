@@ -66,6 +66,8 @@ namespace MovieTicketSolder
             set { movietype = value; }
         }
 
+
+
         /// <summary>
         /// 上映时间
         /// </summary>
