@@ -87,7 +87,7 @@ namespace MovieTicketSolder
                 Time = array[1];
             }
 
-            if(GetMovieInfo(MovieName)==false)
+            if(Time==""||GetMovieInfo(MovieName)==false)
             {
                 return;
             }
@@ -122,6 +122,15 @@ namespace MovieTicketSolder
             SelectActor.Text = movienode.MainActor;
             SelectDirector.Text = movienode.Director;
             SelectType.Text = movienode.MovieType;
+            SelectPrice.Text = Convert.ToString(movienode.Price);
+            if(movienode.ImagePath!="NULL")
+            {
+                MoviePic.ImageLocation = movienode.ImagePath;
+            }
+            else
+            {
+                MoviePic.Image = null;
+            }
 
             return Found;
         }

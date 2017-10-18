@@ -22,7 +22,7 @@ namespace MovieTicketSolder
         /// <param name="MovieType">电影类型</param>
         /// <param name="HaveTime">是否附带时间列表的标识</param>
         /// <param name="TimeList">时间列表，当HaveTime为true传入，false传入null即可</param>
-        public bool AddMovie(string MovieName,string Director,string ImagePath,string MainActor,string MovieType,bool HaveTime,List<string> TimeList)
+        public bool AddMovie(string MovieName,string Director,string ImagePath,string MainActor,string MovieType,double price,bool HaveTime,List<string> TimeList)
         {
             foreach(Movie nodes in List)
             {
@@ -38,6 +38,7 @@ namespace MovieTicketSolder
             node.ImagePath = ImagePath;
             node.MainActor = MainActor;
             node.MovieType = MovieType;
+            node.Price = price;
 
             if(HaveTime==true)
             {
@@ -154,6 +155,8 @@ namespace MovieTicketSolder
                 writer.WriteWhitespace("\r\n  ");
                 writer.WriteElementString("MovieType", List[i].MovieType);
                 writer.WriteWhitespace("\r\n  ");
+                writer.WriteElementString("Price", Convert.ToString(List[i].Price));
+                writer.WriteWhitespace("\r\n  ");
                 writer.WriteElementString("ActionTimeCount", Convert.ToString(List[i].ActionTime.Count));
                 writer.WriteWhitespace("\r\n  ");
 
@@ -188,6 +191,7 @@ namespace MovieTicketSolder
             XmlNodeList ImagePathNodes = null;
             XmlNodeList MainActorNodes = null;
             XmlNodeList MovieTypeNodes = null;
+            XmlNodeList PriceNodes = null;
             XmlNodeList ActionTimeCountNodes = null;
             XmlNodeList ActionTimeNodes = null;//可能出现一对多或者一对无的情况
             XmlElement root = null;
@@ -204,6 +208,7 @@ namespace MovieTicketSolder
                 ImagePathNodes = root.SelectNodes("/MovieLists/Movie/ImagePath");
                 MainActorNodes = root.SelectNodes("/MovieLists/Movie/MainActor");
                 MovieTypeNodes = root.SelectNodes("/MovieLists/Movie/MovieType");
+                PriceNodes = root.SelectNodes("/MovieLists/Movie/Price");
                 ActionTimeCountNodes = root.SelectNodes("/MovieLists/Movie/ActionTimeCount");
                 ActionTimeNodes = root.SelectNodes("/MovieLists/Movie/ActionTime");
 
@@ -212,6 +217,7 @@ namespace MovieTicketSolder
                     Movie node = new Movie();
                     node.Moviename = NameNodes[i].InnerText;
                     node.Director = DirectorNodes[i].InnerText;
+                    node.Price = Convert.ToDouble(PriceNodes[i].InnerText);
                     node.ImagePath = ImagePathNodes[i].InnerText;
                     node.MainActor = MainActorNodes[i].InnerText;
                     node.MovieType = MovieTypeNodes[i].InnerText;

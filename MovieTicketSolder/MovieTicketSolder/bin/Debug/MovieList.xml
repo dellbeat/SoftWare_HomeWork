@@ -1,9 +1,10 @@
-<MovieLists><Movie>
+﻿<MovieLists><Movie>
   <Name>爱拼才会赢</Name>
   <Director>不知道导演是谁</Director>
-  <ImagePath>NULL</ImagePath>
+  <ImagePath>H:\Users\Public\Pictures\Sample Pictures\flower.jpg</ImagePath>
   <MainActor>不知道主演</MainActor>
   <MovieType>瞎编乱造片</MovieType>
+  <Price>60</Price>
   <ActionTimeCount>2</ActionTimeCount>
   <ActionTime>2017-10-11 15:10</ActionTime>
   <ActionTime>2017-10-12 5:10</ActionTime>
@@ -14,6 +15,7 @@
   <ImagePath>NULL</ImagePath>
   <MainActor>不知道主演</MainActor>
   <MovieType>瞎编乱造片</MovieType>
+  <Price>80</Price>
   <ActionTimeCount>1</ActionTimeCount>
   <ActionTime>2017-10-12 5:10</ActionTime>
   </Movie>
@@ -23,6 +25,7 @@
   <ImagePath>NULL</ImagePath>
   <MainActor>不知道主演</MainActor>
   <MovieType>瞎编乱造片</MovieType>
+  <Price>75</Price>
   <ActionTimeCount>1</ActionTimeCount>
   <ActionTime>2017-10-12 5:10</ActionTime>
   </Movie>
@@ -32,6 +35,7 @@
   <ImagePath>NULL</ImagePath>
   <MainActor>不知道主演</MainActor>
   <MovieType>瞎编乱造片</MovieType>
+  <Price>60</Price>
   <ActionTimeCount>0</ActionTimeCount>
   </Movie>
 </MovieLists>

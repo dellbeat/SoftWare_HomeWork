@@ -66,7 +66,10 @@ namespace MovieTicketSolder
             set { movietype = value; }
         }
 
-
+        /// <summary>
+        /// 全票价格
+        /// </summary>
+        public double Price { get; set; }
 
         /// <summary>
         /// 上映时间
