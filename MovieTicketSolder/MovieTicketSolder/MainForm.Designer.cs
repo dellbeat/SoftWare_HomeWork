@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.MoviesList = new System.Windows.Forms.TreeView();
             this.MovieInfo = new System.Windows.Forms.GroupBox();
             this.SelectPrice = new System.Windows.Forms.Label();
@@ -44,25 +43,37 @@
             this.label2 = new System.Windows.Forms.Label();
             this.SelectMovieName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.MovieListShowed = new System.Windows.Forms.TabControl();
+            this.ShowMovieListTab = new System.Windows.Forms.TabPage();
+            this.OperationMenu = new System.Windows.Forms.MenuStrip();
+            this.销售选项ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LoadList = new System.Windows.Forms.ToolStripMenuItem();
+            this.TicketSolder = new System.Windows.Forms.GroupBox();
+            this.NormalTicket = new System.Windows.Forms.RadioButton();
+            this.StuTicket = new System.Windows.Forms.RadioButton();
+            this.FreeTickets = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.StuPrice = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.SendPerName = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.FinalPrice = new System.Windows.Forms.Label();
+            this.SeatViewContent = new System.Windows.Forms.TabControl();
+            this.SeatPage = new System.Windows.Forms.TabPage();
             this.MovieInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MoviePic)).BeginInit();
+            this.MovieListShowed.SuspendLayout();
+            this.ShowMovieListTab.SuspendLayout();
+            this.OperationMenu.SuspendLayout();
+            this.TicketSolder.SuspendLayout();
+            this.SeatViewContent.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(760, 445);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "列表加载";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MoviesList
             // 
-            this.MoviesList.Location = new System.Drawing.Point(12, 49);
+            this.MoviesList.Location = new System.Drawing.Point(6, 6);
             this.MoviesList.Name = "MoviesList";
-            this.MoviesList.Size = new System.Drawing.Size(158, 366);
+            this.MoviesList.Size = new System.Drawing.Size(158, 442);
             this.MoviesList.TabIndex = 1;
             this.MoviesList.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.MoviesList_AfterSelect);
             // 
@@ -81,7 +92,7 @@
             this.MovieInfo.Controls.Add(this.label2);
             this.MovieInfo.Controls.Add(this.SelectMovieName);
             this.MovieInfo.Controls.Add(this.label1);
-            this.MovieInfo.Location = new System.Drawing.Point(176, 49);
+            this.MovieInfo.Location = new System.Drawing.Point(197, 28);
             this.MovieInfo.Name = "MovieInfo";
             this.MovieInfo.Size = new System.Drawing.Size(464, 229);
             this.MovieInfo.TabIndex = 2;
@@ -212,26 +223,214 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "电影名：";
             // 
+            // MovieListShowed
+            // 
+            this.MovieListShowed.Controls.Add(this.ShowMovieListTab);
+            this.MovieListShowed.Location = new System.Drawing.Point(12, 28);
+            this.MovieListShowed.Name = "MovieListShowed";
+            this.MovieListShowed.SelectedIndex = 0;
+            this.MovieListShowed.Size = new System.Drawing.Size(179, 481);
+            this.MovieListShowed.TabIndex = 3;
+            // 
+            // ShowMovieListTab
+            // 
+            this.ShowMovieListTab.Controls.Add(this.MoviesList);
+            this.ShowMovieListTab.Location = new System.Drawing.Point(4, 22);
+            this.ShowMovieListTab.Name = "ShowMovieListTab";
+            this.ShowMovieListTab.Padding = new System.Windows.Forms.Padding(3);
+            this.ShowMovieListTab.Size = new System.Drawing.Size(171, 455);
+            this.ShowMovieListTab.TabIndex = 0;
+            this.ShowMovieListTab.Text = "放映列表";
+            this.ShowMovieListTab.UseVisualStyleBackColor = true;
+            // 
+            // OperationMenu
+            // 
+            this.OperationMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.销售选项ToolStripMenuItem});
+            this.OperationMenu.Location = new System.Drawing.Point(0, 0);
+            this.OperationMenu.Name = "OperationMenu";
+            this.OperationMenu.Size = new System.Drawing.Size(888, 25);
+            this.OperationMenu.TabIndex = 4;
+            this.OperationMenu.Text = "menuStrip1";
+            // 
+            // 销售选项ToolStripMenuItem
+            // 
+            this.销售选项ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LoadList});
+            this.销售选项ToolStripMenuItem.Name = "销售选项ToolStripMenuItem";
+            this.销售选项ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
+            this.销售选项ToolStripMenuItem.Text = "销售选项";
+            // 
+            // LoadList
+            // 
+            this.LoadList.Name = "LoadList";
+            this.LoadList.Size = new System.Drawing.Size(152, 22);
+            this.LoadList.Text = "加载放映列表";
+            this.LoadList.Click += new System.EventHandler(this.LoadList_Click);
+            // 
+            // TicketSolder
+            // 
+            this.TicketSolder.Controls.Add(this.FinalPrice);
+            this.TicketSolder.Controls.Add(this.label7);
+            this.TicketSolder.Controls.Add(this.SendPerName);
+            this.TicketSolder.Controls.Add(this.StuPrice);
+            this.TicketSolder.Controls.Add(this.FreeTickets);
+            this.TicketSolder.Controls.Add(this.StuTicket);
+            this.TicketSolder.Controls.Add(this.NormalTicket);
+            this.TicketSolder.Controls.Add(this.label3);
+            this.TicketSolder.Controls.Add(this.label5);
+            this.TicketSolder.Location = new System.Drawing.Point(678, 126);
+            this.TicketSolder.Name = "TicketSolder";
+            this.TicketSolder.Size = new System.Drawing.Size(188, 131);
+            this.TicketSolder.TabIndex = 5;
+            this.TicketSolder.TabStop = false;
+            this.TicketSolder.Text = "售票区";
+            // 
+            // NormalTicket
+            // 
+            this.NormalTicket.AutoSize = true;
+            this.NormalTicket.Location = new System.Drawing.Point(6, 20);
+            this.NormalTicket.Name = "NormalTicket";
+            this.NormalTicket.Size = new System.Drawing.Size(59, 16);
+            this.NormalTicket.TabIndex = 0;
+            this.NormalTicket.TabStop = true;
+            this.NormalTicket.Text = "普通票";
+            this.NormalTicket.UseVisualStyleBackColor = true;
+            this.NormalTicket.CheckedChanged += new System.EventHandler(this.NormalTicket_CheckedChanged);
+            // 
+            // StuTicket
+            // 
+            this.StuTicket.AutoSize = true;
+            this.StuTicket.Location = new System.Drawing.Point(71, 20);
+            this.StuTicket.Name = "StuTicket";
+            this.StuTicket.Size = new System.Drawing.Size(59, 16);
+            this.StuTicket.TabIndex = 1;
+            this.StuTicket.TabStop = true;
+            this.StuTicket.Text = "学生票";
+            this.StuTicket.UseVisualStyleBackColor = true;
+            this.StuTicket.CheckedChanged += new System.EventHandler(this.StuTicket_CheckedChanged);
+            // 
+            // FreeTickets
+            // 
+            this.FreeTickets.AutoSize = true;
+            this.FreeTickets.Location = new System.Drawing.Point(136, 20);
+            this.FreeTickets.Name = "FreeTickets";
+            this.FreeTickets.Size = new System.Drawing.Size(47, 16);
+            this.FreeTickets.TabIndex = 2;
+            this.FreeTickets.TabStop = true;
+            this.FreeTickets.Text = "赠票";
+            this.FreeTickets.UseVisualStyleBackColor = true;
+            this.FreeTickets.CheckedChanged += new System.EventHandler(this.FreeTickets_CheckedChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 44);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 12);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "学生折扣：";
+            // 
+            // StuPrice
+            // 
+            this.StuPrice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.StuPrice.Enabled = false;
+            this.StuPrice.FormattingEnabled = true;
+            this.StuPrice.Items.AddRange(new object[] {
+            "5折",
+            "6折",
+            "7折",
+            "8折",
+            "9折"});
+            this.StuPrice.Location = new System.Drawing.Point(71, 40);
+            this.StuPrice.Name = "StuPrice";
+            this.StuPrice.Size = new System.Drawing.Size(94, 20);
+            this.StuPrice.TabIndex = 4;
+            this.StuPrice.TextChanged += new System.EventHandler(this.StuPrice_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(17, 74);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 12);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "赠票人：";
+            // 
+            // SendPerName
+            // 
+            this.SendPerName.Enabled = false;
+            this.SendPerName.Location = new System.Drawing.Point(71, 69);
+            this.SendPerName.Name = "SendPerName";
+            this.SendPerName.Size = new System.Drawing.Size(94, 21);
+            this.SendPerName.TabIndex = 6;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(4, 102);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(65, 12);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "实际票价：";
+            // 
+            // FinalPrice
+            // 
+            this.FinalPrice.ForeColor = System.Drawing.Color.Red;
+            this.FinalPrice.Location = new System.Drawing.Point(75, 102);
+            this.FinalPrice.Name = "FinalPrice";
+            this.FinalPrice.Size = new System.Drawing.Size(90, 12);
+            this.FinalPrice.TabIndex = 8;
+            // 
+            // SeatViewContent
+            // 
+            this.SeatViewContent.Controls.Add(this.SeatPage);
+            this.SeatViewContent.Location = new System.Drawing.Point(197, 263);
+            this.SeatViewContent.Name = "SeatViewContent";
+            this.SeatViewContent.SelectedIndex = 0;
+            this.SeatViewContent.Size = new System.Drawing.Size(669, 246);
+            this.SeatViewContent.TabIndex = 6;
+            // 
+            // SeatPage
+            // 
+            this.SeatPage.AutoScroll = true;
+            this.SeatPage.Location = new System.Drawing.Point(4, 22);
+            this.SeatPage.Name = "SeatPage";
+            this.SeatPage.Padding = new System.Windows.Forms.Padding(3);
+            this.SeatPage.Size = new System.Drawing.Size(661, 220);
+            this.SeatPage.TabIndex = 0;
+            this.SeatPage.Text = "座位表";
+            this.SeatPage.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(896, 496);
+            this.ClientSize = new System.Drawing.Size(888, 522);
+            this.Controls.Add(this.SeatViewContent);
+            this.Controls.Add(this.TicketSolder);
+            this.Controls.Add(this.MovieListShowed);
             this.Controls.Add(this.MovieInfo);
-            this.Controls.Add(this.MoviesList);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.OperationMenu);
+            this.MainMenuStrip = this.OperationMenu;
             this.Name = "MainForm";
             this.Text = "售票系统主窗口";
             this.MovieInfo.ResumeLayout(false);
             this.MovieInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MoviePic)).EndInit();
+            this.MovieListShowed.ResumeLayout(false);
+            this.ShowMovieListTab.ResumeLayout(false);
+            this.OperationMenu.ResumeLayout(false);
+            this.OperationMenu.PerformLayout();
+            this.TicketSolder.ResumeLayout(false);
+            this.TicketSolder.PerformLayout();
+            this.SeatViewContent.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TreeView MoviesList;
         private System.Windows.Forms.GroupBox MovieInfo;
         private System.Windows.Forms.Label SelectDirector;
@@ -247,6 +446,23 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label SelectPrice;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TabControl MovieListShowed;
+        private System.Windows.Forms.TabPage ShowMovieListTab;
+        private System.Windows.Forms.MenuStrip OperationMenu;
+        private System.Windows.Forms.ToolStripMenuItem 销售选项ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem LoadList;
+        private System.Windows.Forms.GroupBox TicketSolder;
+        private System.Windows.Forms.RadioButton FreeTickets;
+        private System.Windows.Forms.RadioButton StuTicket;
+        private System.Windows.Forms.RadioButton NormalTicket;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox StuPrice;
+        private System.Windows.Forms.TextBox SendPerName;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label FinalPrice;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TabControl SeatViewContent;
+        private System.Windows.Forms.TabPage SeatPage;
     }
 }
 

@@ -10,5 +10,13 @@ namespace MovieTicketSolder
         public double Price { get; set; }
         public string MovieName { get; set; }
         public string VaildTime { get; set; }
+
+        public Ticket(int index,double price,string moviename,string vaildtime)
+        {
+            Index = index;
+            Price = price;
+            MovieName = moviename;
+            VaildTime = vaildtime;
+        }
     }
 }

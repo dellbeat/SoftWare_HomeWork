@@ -9,13 +9,14 @@ namespace MovieTicketSolder
             set;
         }
 
-        public StudentTicket(double rate,Ticket ticket,int index)
+        public StudentTicket(int index, double price, string moviename, string vaildtime,double rate)
+            :base(index, price, moviename, vaildtime)
         {
-            PriceRate = rate;
-            Price = ticket.Price * PriceRate;
             Index = index;
-            MovieName = ticket.MovieName;
-            VaildTime = ticket.VaildTime;
+            Price = price;
+            MovieName = moviename;
+            VaildTime = vaildtime;
+            PriceRate = rate;
         }
     }
 }

@@ -26,3 +26,12 @@ J:\ojc\SoftWare_HomeWork\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTick
 J:\ojc\SoftWare_HomeWork\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.csproj.GenerateResource.Cache
 J:\ojc\SoftWare_HomeWork\MovieTicketSolder\MovieTicketSolder\bin\Debug\MovieTicketSolder.exe
 J:\ojc\SoftWare_HomeWork\MovieTicketSolder\MovieTicketSolder\bin\Debug\MovieTicketSolder.pdb
+D:\360安全浏览器下载\SoftWare_HomeWork-master\MovieTicketSolder\MovieTicketSolder\bin\Debug\MovieTicketSolder.exe.config
+D:\360安全浏览器下载\SoftWare_HomeWork-master\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.exe
+D:\360安全浏览器下载\SoftWare_HomeWork-master\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.pdb
+D:\360安全浏览器下载\SoftWare_HomeWork-master\MovieTicketSolder\MovieTicketSolder\bin\Debug\MovieTicketSolder.exe
+D:\360安全浏览器下载\SoftWare_HomeWork-master\MovieTicketSolder\MovieTicketSolder\bin\Debug\MovieTicketSolder.pdb
+D:\360安全浏览器下载\SoftWare_HomeWork-master\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.csprojResolveAssemblyReference.cache
+D:\360安全浏览器下载\SoftWare_HomeWork-master\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.MainForm.resources
+D:\360安全浏览器下载\SoftWare_HomeWork-master\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.Properties.Resources.resources
+D:\360安全浏览器下载\SoftWare_HomeWork-master\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.csproj.GenerateResource.Cache

@@ -4,13 +4,14 @@ namespace MovieTicketSolder
     public class FreeTicket:Ticket
     {
         public string SendName;
-        public FreeTicket(int index,Ticket ticket,string name)
+        public FreeTicket(int index, double price, string moviename, string vaildtime,string sendname)
+            :base(index,price,moviename,vaildtime)
         {
             Index = index;
-            MovieName = ticket.MovieName;
             Price = 0;
-            VaildTime = ticket.VaildTime;
-            SendName = name;
+            MovieName = moviename;
+            VaildTime = vaildtime;
+            SendName = sendname;
         }
     }
 }
