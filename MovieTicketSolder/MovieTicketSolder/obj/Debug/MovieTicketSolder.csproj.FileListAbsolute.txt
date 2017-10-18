@@ -35,3 +35,6 @@ D:\360安全浏览器下载\SoftWare_HomeWork-master\MovieTicketSolder\MovieTick
 D:\360安全浏览器下载\SoftWare_HomeWork-master\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.MainForm.resources
 D:\360安全浏览器下载\SoftWare_HomeWork-master\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.Properties.Resources.resources
 D:\360安全浏览器下载\SoftWare_HomeWork-master\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.csproj.GenerateResource.Cache
+C:\Users\Administrator.WIN10-710012008\Documents\GitHub\SoftWare_HomeWork\MovieTicketSolder\MovieTicketSolder\bin\Debug\MovieTicketSolder.exe.config
+C:\Users\Administrator.WIN10-710012008\Documents\GitHub\SoftWare_HomeWork\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.exe
+C:\Users\Administrator.WIN10-710012008\Documents\GitHub\SoftWare_HomeWork\MovieTicketSolder\MovieTicketSolder\obj\Debug\MovieTicketSolder.pdb
